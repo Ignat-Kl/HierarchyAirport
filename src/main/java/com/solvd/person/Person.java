@@ -60,7 +60,6 @@ public abstract class Person implements PersonOperation {
         this.personEmail = personEmail;
     }
 
-    //Абстрактный метод, который должен быть реализован
     public abstract void displayInfo();
 
     @Override

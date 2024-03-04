@@ -1,11 +1,14 @@
 package com.solvd.person;
 
 import com.solvd.person.Person;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class Passenger extends Person {
+    private static final Logger LOGGER = LogManager.getLogger(Passenger.class);
     private String seatNumber;
 
     public Passenger(String personId, String personName,String personSurname,LocalDateTime dateOfBirth,String seatNumber,String personEmail) {
@@ -28,9 +31,13 @@ public class Passenger extends Person {
     }
 
     @Override
-    public void  boardPassenger(){};
+    public void  boardPassenger(){
+        LOGGER.info("The passenger " + getPersonName() + " took his seat");
+    }
     @Override
-    public void disembarkPassenger(){};
+    public void disembarkPassenger(){
+        LOGGER.error("The passenger " + getPersonName()+  " left his seat");
+    }
 
     @Override
     public String toString(){

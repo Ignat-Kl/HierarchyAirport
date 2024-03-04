@@ -3,4 +3,6 @@ package com.solvd.interFace;
 public interface TerminalOperation {
     void loadCargo();
     void unLoadCargo();
+    void boardingPermission();
+    void boardingCompletion();
 }

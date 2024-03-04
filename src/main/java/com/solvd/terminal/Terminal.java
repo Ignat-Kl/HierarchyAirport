@@ -61,12 +61,14 @@ public abstract class Terminal implements TerminalOperation {
 
     @Override
     public void loadCargo(){
-
     }
-
     @Override
     public void unLoadCargo(){
     }
+    @Override
+    public void boardingPermission(){}
+    @Override
+    public void boardingCompletion(){}
     @Override
     public String toString(){
         return  "Terminal{" +

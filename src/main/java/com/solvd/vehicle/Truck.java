@@ -1,14 +1,14 @@
 package com.solvd.vehicle;
 
 import com.solvd.Main;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
 
 public class Truck extends Vehicle{
-    private static final Logger LOGGER = Logger.getLogger(Truck.class.getName());
+    private static final Logger LOGGER = LogManager.getLogger(Truck.class);
     private String truckCode;
 
     public Truck(String truckCode, String model, int capacity,LocalDateTime year){
@@ -26,14 +26,15 @@ public class Truck extends Vehicle{
 
     @Override
     public void start() {
-        LOGGER.info("dgd");
+        LOGGER.info( getModel() + "engine is running");
     }
     @Override
     public void stop() {
-
+        LOGGER.info( getModel() + "engine is turned off");
     }
     @Override
     public void recharge() {
+        LOGGER.info( getModel() + "battery is charged");
     }
     @Override
     public String toString(){

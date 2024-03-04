@@ -39,7 +39,7 @@ public abstract class Vehicle implements VehicleOperation {
     public void setYear(LocalDateTime year){
         this.year=year;
     }
-    //Реализация метода
+
     @Override
     public void start(){
 

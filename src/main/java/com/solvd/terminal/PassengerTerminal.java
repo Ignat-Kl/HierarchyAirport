@@ -1,10 +1,13 @@
 package com.solvd.terminal;
 
 import com.solvd.person.Passenger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Objects;
 
 public class PassengerTerminal extends Terminal{
+    private static final Logger LOGGER = LogManager.getLogger(PassengerTerminal.class);
     private String passengerBaggageArea;
 
     public PassengerTerminal(String passengerBaggageArea, String terminalCode, String terminalName) {
@@ -19,12 +22,12 @@ public class PassengerTerminal extends Terminal{
         this.passengerBaggageArea = passengerBaggageArea;
     }
         @Override
-    public void loadCargo(){
-
-        }
+    public void boardingPermission(){
+        LOGGER.info("Board at your terminal");
+    }
     @Override
-    public void unLoadCargo(){
-
+    public void boardingCompletion(){
+        LOGGER.info("Boarding at your terminal is completed");
     }
 
     @Override

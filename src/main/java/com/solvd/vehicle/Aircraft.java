@@ -2,8 +2,11 @@ package com.solvd.vehicle;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Aircraft extends Vehicle {
+    private static final Logger LOGGER = LogManager.getLogger(Aircraft.class);
 
     private String aircraftCode;
 
@@ -22,14 +25,15 @@ public class Aircraft extends Vehicle {
     }
     @Override
     public void start(){
-
+        LOGGER.info(getModel() + " turbine is running");
     }
     @Override
     public void stop(){
-
+        LOGGER.info( getModel() + " turbine is turned off");
     }
     @Override
     public void refuel(){
+        LOGGER.info(getModel() + " tank is full");
     }
     @Override
     public String toString(){

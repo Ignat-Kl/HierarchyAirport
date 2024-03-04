@@ -1,8 +1,12 @@
 package com.solvd.terminal;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.Objects;
 
 public class CargoTerminal extends Terminal {
+    private static final Logger LOGGER = LogManager.getLogger(CargoTerminal.class);
     private String cargoBaggageArea;
 
     public CargoTerminal(String CargoBaggageArea, String terminalCode, String terminalName) {
@@ -20,10 +24,11 @@ public class CargoTerminal extends Terminal {
 
     @Override
     public void loadCargo(){
-
+        LOGGER.info("Сargo loaded and ready");
     }
     @Override
     public void unLoadCargo(){
+        LOGGER.info("Cargo unloaded and ready");
     }
     @Override
     public String toString(){

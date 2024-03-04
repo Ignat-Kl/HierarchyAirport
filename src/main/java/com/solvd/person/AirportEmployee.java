@@ -1,9 +1,13 @@
 package com.solvd.person;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class AirportEmployee extends Person {
+    private static final Logger LOGGER = LogManager.getLogger(AirportEmployee.class);
     private String position;
     private double salary;
 
@@ -39,9 +43,13 @@ public class AirportEmployee extends Person {
         System.out.println("AirportEmployee Salary: " + getSalary());
     }
     @Override
-    public void sellTicket(){};
+    public void sellTicket(){
+        LOGGER.info("All tickets have been sold" + getPersonName());
+    };
     @Override
-    public void checkTicket(){};
+    public void checkTicket(){
+        LOGGER.info("All tickets have been checked" + getPersonName());
+    };
 
     @Override
     public String toString(){
