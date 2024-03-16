@@ -7,12 +7,13 @@ import com.solvd.vehicle.Aircraft;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 public abstract class Terminal implements TerminalOperation {
     private String terminalCode;
     private String terminalName;
-    private List<AirportEmployee> employees = new ArrayList<>();
-    private List<Aircraft> aircrafts = new ArrayList<>();
+    private List<AirportEmployee> employees;
+    private List<Aircraft> aircrafts;
 
     public Terminal(String terminalCode, String terminalName) {
         this.terminalCode = terminalCode;
@@ -20,10 +21,16 @@ public abstract class Terminal implements TerminalOperation {
     }
 
     public void addEmployee(AirportEmployee employee) {
+        if (employees == null) {
+            employees = new ArrayList<>();
+        }
         employees.add(employee);
     }
 
     public void addAircraft(Aircraft aircraft) {
+        if (aircrafts == null) {
+            aircrafts = new ArrayList<>();
+        }
         aircrafts.add(aircraft);
     }
 

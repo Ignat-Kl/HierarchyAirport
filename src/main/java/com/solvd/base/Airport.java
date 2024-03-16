@@ -12,7 +12,7 @@ public class Airport {
     private String airportCode;
     private String airportName;
     private Address address;
-    private List<Terminal> terminals = new ArrayList<>();
+    private List<Terminal> terminals;
 
     public Airport (String airportCode, String airportName, Address address) {
         if(airportCode == null || airportName == null || address == null) {
@@ -24,6 +24,9 @@ public class Airport {
     }
 
     public void addTerminal(Terminal terminal) {
+        if (terminals == null) {
+            terminals = new ArrayList<>();
+        }
         terminals.add(terminal);
     }
 

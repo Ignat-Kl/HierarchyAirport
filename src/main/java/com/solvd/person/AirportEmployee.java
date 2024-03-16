@@ -44,11 +44,11 @@ public class AirportEmployee extends Person {
     }
     @Override
     public void sellTicket(){
-        LOGGER.info("All tickets have been sold" + getPersonName());
+        LOGGER.info("All tickets have been sold by " + getPersonName());
     };
     @Override
     public void checkTicket(){
-        LOGGER.info("All tickets have been checked" + getPersonName());
+        LOGGER.info("All tickets have been checked by" + getPersonName());
     };
 
     @Override

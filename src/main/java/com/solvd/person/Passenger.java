@@ -36,7 +36,7 @@ public class Passenger extends Person {
     }
     @Override
     public void disembarkPassenger(){
-        LOGGER.error("The passenger " + getPersonName()+  " left his seat");
+        LOGGER.info("The passenger " + getPersonName()+  " left his seat");
     }
 
     @Override

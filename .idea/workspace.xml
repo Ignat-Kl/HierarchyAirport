@@ -5,25 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d573b1bc-ee7b-4d8c-99d7-597cd67c71c8" name="Changes" comment="Version 1">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/interFace/TerminalOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/interFace/TerminalOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/base/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/base/Airport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/person/AirportEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/person/AirportEmployee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/person/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/person/Passenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/person/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/terminal/CargoTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/terminal/CargoTerminal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/terminal/PassengerTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/terminal/PassengerTerminal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/terminal/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/terminal/Terminal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/vehicle/Aircraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/vehicle/Aircraft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/vehicle/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/vehicle/Truck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/vehicle/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/vehicle/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/utils/AirportUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/utils/AirportUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,13 +39,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/User/IdeaProjects/Airport"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/IdeaProjects/Airport&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.solvd.Main" />
