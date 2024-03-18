@@ -1,19 +1,20 @@
 package com.solvd.flight;
 
-import com.solvd.person.Passenger;
 import com.solvd.terminal.Terminal;
-import com.solvd.vehicle.Aircraft;
+import com.solvd.vehicle.PassengerAircraft;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class PassengerFlight extends Flight{
     private String passengerFlightCode;
+    private PassengerAircraft passengerAircraft;
 
     public PassengerFlight(String passengerFlightCode, LocalDateTime departureTime, Terminal departureTerminal,
-                           Terminal arrivalTerminal, Aircraft aircraft) {
-        super(departureTime,departureTerminal,arrivalTerminal,aircraft);
+                           Terminal arrivalTerminal, PassengerAircraft passengerAircraft) {
+        super(departureTime,departureTerminal,arrivalTerminal);
         this.passengerFlightCode = passengerFlightCode;
+        this.passengerAircraft =  passengerAircraft;
     }
 
 
@@ -26,6 +27,14 @@ public class PassengerFlight extends Flight{
         this.passengerFlightCode = passengerFlightCode;
     }
 
+    public PassengerAircraft getPassengerAircraft() {
+        return passengerAircraft;
+    }
+
+    public void setPassengerAircraft(PassengerAircraft passengerAircraft) {
+        this.passengerAircraft = passengerAircraft;
+    }
+
     @Override
     public void takeOff(){
 
@@ -35,7 +44,8 @@ public class PassengerFlight extends Flight{
 
     @Override
     public String toString(){
-        return "PassengerFlight{" + "passengerFlightCode= '" + passengerFlightCode +"' ,"+  super.toString();
+        return "PassengerFlight{" + "passengerFlightCode= '" + passengerFlightCode +"' ," +
+                "passengerAircraft= '" + passengerAircraft + "' ," +  super.toString() + "}";
     }
     @Override
     public boolean equals(Object o){
@@ -43,11 +53,12 @@ public class PassengerFlight extends Flight{
         if(!(o instanceof PassengerFlight)) return false;
         PassengerFlight passenger = (PassengerFlight) o;
         return Objects.equals(getPassengerFlightCode(),passenger.getPassengerFlightCode()) &&
+                Objects.equals(getPassengerAircraft(), passenger.getPassengerAircraft()) &&
                 super.equals(o);
     }
     @Override
     public int hashCode(){
-        return Objects.hashCode(getPassengerFlightCode());
+        return Objects.hash(getPassengerFlightCode(), getPassengerAircraft());
     }
 }
 

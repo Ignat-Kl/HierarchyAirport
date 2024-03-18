@@ -2,7 +2,7 @@ package com.solvd.flight;
 
 import com.solvd.interFace.FlightOperation;
 import com.solvd.terminal.Terminal;
-import com.solvd.vehicle.Aircraft;
+import com.solvd.vehicle.PassengerAircraft;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
@@ -12,16 +12,14 @@ public abstract class Flight implements FlightOperation {
     private LocalDateTime departureTime;
     private Terminal departureTerminal;
     private Terminal arrivalTerminal;
-    private Aircraft aircraft;
 
-    public Flight(LocalDateTime departureTime, Terminal departureTerminal,
-                  Terminal arrivalTerminal, Aircraft aircraft) {
+
+    public Flight(LocalDateTime departureTime, Terminal departureTerminal, Terminal arrivalTerminal) {
         this.departureTime = departureTime;
         this.departureTerminal = departureTerminal;
         this.arrivalTerminal = arrivalTerminal;
-        this.aircraft = aircraft;
-    }
 
+    }
 
     public LocalDateTime getDepartureTime() {
         return departureTime;
@@ -47,13 +45,6 @@ public abstract class Flight implements FlightOperation {
         this.arrivalTerminal = arrivalTerminal;
     }
 
-    public Aircraft getAircraft() {
-        return aircraft;
-    }
-
-    public void setAircraft(Aircraft aircraft) {
-        this.aircraft = aircraft;
-    }
     @Override
     public void takeOff(){
 
@@ -75,7 +66,6 @@ public abstract class Flight implements FlightOperation {
                 "departureTime='" + departureTime + '\'' +
                 ", departureTerminal='" + departureTerminal + '\'' +
                 ", arrivalTerminal='" + arrivalTerminal + '\'' +
-                ", aircraft='" + aircraft + '\'' +
                 '}';
     }
     @Override
@@ -85,12 +75,11 @@ public abstract class Flight implements FlightOperation {
         Flight flight = (Flight) o;
         return Objects.equals(getDepartureTime(), flight.getDepartureTime()) &&
                 Objects.equals(getDepartureTerminal(), flight.getDepartureTerminal()) &&
-                Objects.equals(getArrivalTerminal(), flight.getArrivalTerminal()) &&
-                Objects.equals(getAircraft(), flight.getAircraft());
+                Objects.equals(getArrivalTerminal(), flight.getArrivalTerminal());
     }
     @Override
     public int hashCode(){
-        return Objects.hash(getDepartureTime(),getDepartureTerminal(),getArrivalTerminal(),getAircraft());
+        return Objects.hash(getDepartureTime(),getDepartureTerminal(),getArrivalTerminal());
     }
 }
 

@@ -1,17 +1,18 @@
 package com.solvd.vehicle;
 
-import java.time.LocalDateTime;
-import java.util.Objects;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class Aircraft extends Vehicle {
-    private static final Logger LOGGER = LogManager.getLogger(Aircraft.class);
+import java.time.LocalDateTime;
+import java.util.Objects;
+
+public class CargoAircraft extends Vehicle{
+    private static final Logger LOGGER = LogManager.getLogger(CargoAircraft.class);
 
     private String aircraftCode;
 
-    public Aircraft(String aircraftCode, String model, int capacity, LocalDateTime year) {
-        super(model, capacity, year);
+    public CargoAircraft(String aircraftCode, String model, int carrying, LocalDateTime year) {
+        super(model, carrying, year);
         this.aircraftCode = aircraftCode;
 
     }
@@ -37,14 +38,14 @@ public class Aircraft extends Vehicle {
     }
     @Override
     public String toString(){
-        return "Aircraft{" + "aircraftCode='" + aircraftCode + '\'' + ", " + super.toString();
+        return "CargoAircraft{" + "aircraftCode='" + aircraftCode + '\'' + ", " + super.toString();
     }
     @Override
     public boolean equals(Object o){
         if (this == o) return true;
-        if (!(o instanceof Aircraft)) return false;
-        Aircraft aircraft = (Aircraft) o;
-        return Objects.equals(getAircraftCode(),aircraft.getAircraftCode()) &&
+        if (!(o instanceof CargoAircraft)) return false;
+        CargoAircraft cargoAircraft = (CargoAircraft) o;
+        return Objects.equals(getAircraftCode(), cargoAircraft.getAircraftCode()) &&
                 super.equals(o);
     }
     @Override
@@ -52,5 +53,4 @@ public class Aircraft extends Vehicle {
         return Objects.hashCode(getAircraftCode());
     }
 }
-
 

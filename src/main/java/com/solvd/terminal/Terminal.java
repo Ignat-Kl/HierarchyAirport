@@ -2,18 +2,17 @@ package com.solvd.terminal;
 
 import com.solvd.interFace.TerminalOperation;
 import com.solvd.person.AirportEmployee;
-import com.solvd.vehicle.Aircraft;
+import com.solvd.vehicle.PassengerAircraft;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 public abstract class Terminal implements TerminalOperation {
     private String terminalCode;
     private String terminalName;
     private List<AirportEmployee> employees;
-    private List<Aircraft> aircrafts;
+    private List<PassengerAircraft> passengerAircrafts;
 
     public Terminal(String terminalCode, String terminalName) {
         this.terminalCode = terminalCode;
@@ -27,11 +26,11 @@ public abstract class Terminal implements TerminalOperation {
         employees.add(employee);
     }
 
-    public void addAircraft(Aircraft aircraft) {
-        if (aircrafts == null) {
-            aircrafts = new ArrayList<>();
+    public void addAircraft(PassengerAircraft passengerAircraft) {
+        if (passengerAircrafts == null) {
+            passengerAircrafts = new ArrayList<>();
         }
-        aircrafts.add(aircraft);
+        passengerAircrafts.add(passengerAircraft);
     }
 
     public String getTerminalCode() {
@@ -58,19 +57,19 @@ public abstract class Terminal implements TerminalOperation {
         this.employees = employees;
     }
 
-    public List<Aircraft> getAircrafts() {
-        return aircrafts;
+    public List<PassengerAircraft> getAircrafts() {
+        return passengerAircrafts;
     }
 
-    public void setAircrafts(List<Aircraft> aircrafts) {
-        this.aircrafts = aircrafts;
+    public void setAircrafts(List<PassengerAircraft> passengerAircrafts) {
+        this.passengerAircrafts = passengerAircrafts;
     }
 
     @Override
-    public void loadCargo(){
+    public void cargoLoadingStarted(){
     }
     @Override
-    public void unLoadCargo(){
+    public void cargoLoadingCompleted(){
     }
     @Override
     public void boardingPermission(){}
@@ -82,7 +81,7 @@ public abstract class Terminal implements TerminalOperation {
                 "terminalCode='" + terminalCode + '\'' +
                 ", terminalName='" + terminalName + '\'' +
                 ", employee=" + employees +
-                ", aircraft=" + aircrafts +
+                ", aircraft=" + passengerAircrafts +
                 '}';
     }
     @Override

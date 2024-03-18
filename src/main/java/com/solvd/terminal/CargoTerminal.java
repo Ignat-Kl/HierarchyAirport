@@ -23,12 +23,12 @@ public class CargoTerminal extends Terminal {
     }
 
     @Override
-    public void loadCargo(){
-        LOGGER.info("Сargo loaded and ready");
+    public void cargoLoadingStarted(){
+        LOGGER.info("The cargo is loading and will be ready soon");
     }
     @Override
-    public void unLoadCargo(){
-        LOGGER.info("Cargo unloaded and ready");
+    public void cargoLoadingCompleted(){
+        LOGGER.info("The cargo is loaded and ready");
     }
     @Override
     public String toString(){

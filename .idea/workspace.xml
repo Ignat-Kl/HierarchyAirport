@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d573b1bc-ee7b-4d8c-99d7-597cd67c71c8" name="Changes" comment="Version 1">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/cargo/Cargo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/interFace/CargoOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/vehicle/CargoAircraft.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/base/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/base/Airport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/person/AirportEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/person/AirportEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/person/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/person/Passenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/flight/CargoFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/flight/CargoFlight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/flight/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/flight/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/flight/PassengerFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/flight/PassengerFlight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/interFace/TerminalOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/interFace/TerminalOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/terminal/CargoTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/terminal/CargoTerminal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/terminal/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/terminal/Terminal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/utils/AirportUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/utils/AirportUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/vehicle/Aircraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/vehicle/PassengerAircraft.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -52,7 +57,7 @@
       <module name="HierarchyAirport" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.solvd.*" />
+          <option name="PATTERN" value="com.solvd.cargo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -62,7 +67,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.com.solvd.Main" />
       </list>
     </recent_temporary>
   </component>
