@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d573b1bc-ee7b-4d8c-99d7-597cd67c71c8" name="Changes" comment="Version 1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/cargo/Cargo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/interFace/CargoOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/vehicle/CargoAircraft.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/flight/CargoFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/flight/CargoFlight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/flight/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/flight/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/flight/PassengerFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/flight/PassengerFlight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/interFace/TerminalOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/interFace/TerminalOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/terminal/CargoTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/terminal/CargoTerminal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/terminal/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/terminal/Terminal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/utils/AirportUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/utils/AirportUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/vehicle/Aircraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/vehicle/PassengerAircraft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/cargo/Cargo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/cargo/Cargo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/person/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/person/Passenger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,11 +56,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.com.solvd.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

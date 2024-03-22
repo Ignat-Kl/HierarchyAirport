@@ -25,9 +25,9 @@ public class Passenger extends Person {
     }
     @Override
     public void displayInfo(){
-        System.out.println("Passenger ID: " + getPersonId());
-        System.out.println("Passenger Name: " + getPersonName());
-        System.out.println("Seat Number: " + getSeatNumber());
+        LOGGER.info("Passenger ID: " + getPersonId());
+        LOGGER.info("Passenger Name: " + getPersonName());
+        LOGGER.info("Seat Number: " + getSeatNumber());
     }
 
     @Override

@@ -113,9 +113,9 @@ public class Main {
         CargoFlight cargoFlight3 = new CargoFlight("CF003", LocalDateTime.now(),cargoTerminal3,cargoTerminal1,cargoAircraft3);
 
         List<Cargo> cargos = new ArrayList<>();
-        Cargo cargo1 = new Cargo("C001", "Vase", 1,airportAddress1);
-        Cargo cargo2 = new Cargo("C002", "Brick", 1200,airportAddress2);
-        Cargo cargo3 = new Cargo("C003", "Wallet", 14,airportAddress3);
+        Cargo cargo1 = new Cargo("C001", "Vase", 1);
+        Cargo cargo2 = new Cargo("C002", "Brick", 1200);
+        Cargo cargo3 = new Cargo("C003", "Wallet", 14);
 
         cargos.add(cargo1);
         cargos.add(cargo2);

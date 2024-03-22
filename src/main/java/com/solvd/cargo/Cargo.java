@@ -14,14 +14,12 @@ public class Cargo implements CargoOperation {
     private String cargoId;
     private String description;
     private int weight;
-    private Address destination;
 
-    public Cargo(String cargoId, String description, int weight,
-                 Address destination) {
+
+    public Cargo(String cargoId, String description, int weight) {
         this.cargoId = cargoId;
         this.description = description;
         this.weight = weight;
-        this.destination = destination;
     }
 
     public String getCargoId(){
@@ -43,13 +41,7 @@ public class Cargo implements CargoOperation {
         this.weight=weight;
     }
 
-    public Address getDestination() {
-        return destination;
-    }
 
-    public void setDestination(Address destination) {
-        this.destination = destination;
-    }
     @Override
     public void loadCargo(){
         LOGGER.info("Cargo is loading");
@@ -68,7 +60,6 @@ public class Cargo implements CargoOperation {
                 "CargoId='" + cargoId + '\'' +
                 ", description='" + description + '\'' +
                 ", weight='" + weight + '\'' +
-                ", destination='" + destination + '\'' +
                 '}';
     }
     @Override
@@ -78,11 +69,10 @@ public class Cargo implements CargoOperation {
         Cargo cargo = (Cargo) o;
         return Objects.equals(getCargoId(),cargo.getCargoId()) &&
                 Objects.equals(getDescription(),cargo.getDescription()) &&
-                Integer.compare(getWeight(),cargo.getWeight()) == 0 &&
-                Objects.equals(getDestination(),cargo.getDestination());
+                Integer.compare(getWeight(),cargo.getWeight()) == 0;
     }
     @Override
     public int hashCode(){
-        return Objects.hash(getCargoId(),getDescription(), getWeight(),getDescription());
+        return Objects.hash(getCargoId(),getDescription(), getWeight());
     }
 }
